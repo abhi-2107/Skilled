@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: burlywood;
+  background-color: whitesmoke;
 }
 
 header {
@@ -36,34 +36,48 @@ h1 {
   color: rgb(0, 0, 65);
   margin-top: 9%;
   /* for responsive font size 1vw= 1% of view port width */
-  font-size: 11vw;
+  font-size: 2em;
 }
 
 .color-style {
   /* to use a gradient in background do this */
-  background-image: linear-gradient(rgb(222, 144, 34), rgb(189, 54, 196));
+  background-image: linear-gradient(rgb(219, 134, 14), rgb(189, 54, 196));
 }
 
 .box-containor {
+  width: 100%;
   padding: 0% 4%;
   display: flex;
-  border: 3px solid;
+  flex-direction: column;
 }
 
 .box {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: 2px solid blue;
   gap: 15px;
+}
+.containor-img-girl {
+  /* align self used to set this individual flex item to align center */
+  align-self: center;
+  width: 46vh;
+  height: 46vh;
+  border-radius: 50%;
+margin: 10% 2%;
+}
+.girl-image {
+  display: none;
+  width: 60%;
+  overflow: hidden;
 }
 
 .box-btn {
   border-radius: 20px;
-  padding: 10px 20px;
-  width: 35%;
+  padding: 15px 20px;
+  width: 120px;
   color: white;
-  border: 30px;
+  border: none;
+  font-size: 0.8em;
 }
 
 /* view for tablet  */
@@ -75,10 +89,10 @@ h1 {
   header {
     padding: 4% 5%;
   }
-
+  /* 
   h1 {
     font-size: 2em;
-  }
+  } */
 }
 
 /* view for laptops and desktops */
@@ -91,17 +105,19 @@ h1 {
     padding: 3% 10%;
   }
 
-  .box-containor {
-   padding: 0% 9%;
+  /* .box-containor {
+    padding: 0% 9%;
   }
-  .girl-image{
-    max-width: 90% ;
+
+  .girl-image {
+    max-width: 90%;
     height: auto;
   }
-.containor-img-girl{
-  height: 100%;
-  width: 50%;
-  border-radius: 40%;
-  overflow:hidden;
-}
+
+  .containor-img-girl {
+    height: 100%;
+    width: 50%;
+    border-radius: 40%;
+    overflow: hidden;
+  } */
 }
