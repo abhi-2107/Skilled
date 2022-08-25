@@ -110,7 +110,7 @@ p {
 }
 .items-around-girl-left {
   position: absolute;
-  top: 110%;
+  top: 105%;
   left: 15%;
   background-color: white;
   padding: 3.5%;
@@ -140,6 +140,46 @@ span {
   font-weight: bold;
   padding: 6% 7%;
   color: white;
+}
+
+/* arranging the content with the help of grid  */
+.gird{
+  display: grid;
+background-color: purple;
+}
+.grid-item{
+border: 2px solid red;
+background-color: white;
+border-radius: 10px;
+padding: 5%;
+margin: 8% 4%;
+}
+.text{
+ color: magenta;
+}
+
+footer{
+  display: flex;
+    background-color: rgb(17, 17, 61);
+justify-content: space-between;
+align-items: center;
+padding: 13% 6%;
+}
+.footer-left a{
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+/* right part of footer the button like structure */
+.footer-right a{
+  text-decoration: none;
+  color: white;
+  font-weight: 500 ;
+  background-image: linear-gradient(rgb(74, 64, 215), rgb(189, 54, 196));
+  padding: 10px 20px;
+  border-radius: 30px;
 }
 
 /* view for tablet  */
