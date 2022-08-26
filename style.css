@@ -143,29 +143,37 @@ span {
 }
 
 /* arranging the content with the help of grid  */
-.gird{
+.grid{
   display: grid;
-background-color: purple;
+  grid-template-columns: auto;
+  
 }
-.grid-item{
-border: 2px solid red;
-background-color: white;
-border-radius: 10px;
-padding: 5%;
-margin: 8% 4%;
-}
-.text{
- color: magenta;
+.grid-item {
+  border: 2px solid blue;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5%;
+  margin: 8% 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-footer{
-  display: flex;
-    background-color: rgb(17, 17, 61);
-justify-content: space-between;
-align-items: center;
-padding: 13% 6%;
+
+.text {
+  margin-top: 12px;
+  color: magenta;
+  /* color: linear-gradient(rgb(219, 134, 14), rgb(189, 54, 196)); not working at all  */
 }
-.footer-left a{
+
+footer {
+  display: flex;
+  background-color: rgb(17, 17, 61);
+  justify-content: space-between;
+  align-items: center;
+  padding: 13% 6%;
+}
+.footer-left a {
   text-decoration: none;
   color: white;
   font-weight: bolder;
@@ -173,10 +181,10 @@ padding: 13% 6%;
 }
 
 /* right part of footer the button like structure */
-.footer-right a{
+.footer-right a {
   text-decoration: none;
   color: white;
-  font-weight: 500 ;
+  font-weight: 500;
   background-image: linear-gradient(rgb(74, 64, 215), rgb(189, 54, 196));
   padding: 10px 20px;
   border-radius: 30px;
