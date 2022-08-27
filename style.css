@@ -136,9 +136,9 @@ span {
   border-radius: 10px;
 }
 .check p {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: bold;
-  padding: 6% 7%;
+  padding: 8% 7%;
   color: white;
 }
 
@@ -146,19 +146,23 @@ span {
 .grid {
   display: grid;
   grid-template-columns: auto;
-  background-color:rgb(230, 236, 246);
+  background-color: rgb(230, 236, 246);
   row-gap: 45px;
+  padding-bottom: 22%;
+  column-gap: 2%;
 }
 .grid-item {
   background-color: white;
   border-radius: 10px;
   padding: 5%;
   padding-top: 0px;
-  margin: 0px 4%;
 }
 .grid-item p {
   margin: 13px 0px;
+  padding: 10px 0px;
   row-gap: 15px;
+  /* it adds space between lines written in paragraph */
+  line-height: 23px;
 }
 
 .circle {
@@ -176,13 +180,13 @@ span {
   height: auto;
 }
 
-h3{
+h3 {
   font-size: large;
   font-weight: bold;
 }
 .text {
   margin-top: 12px;
-  color: magenta;
+  color: rgb(166, 99, 6);
   /* color: linear-gradient(rgb(219, 134, 14), rgb(189, 54, 196)); not working at all  */
 }
 
@@ -212,33 +216,49 @@ footer {
 
 /* view for tablet  */
 @media screen and (min-width: 490px) {
-  body {
-    background-color: skyblue;
-  }
-
   header {
     padding: 4% 5%;
   }
-  /* 
   h1 {
-    font-size: 2em;
-  } */
+    font-size: 48px;
+  }
+  .box-containor {
+    flex-direction: row;
+  }
+
+  .grid {
+    grid-template-columns: auto auto;
+    padding-bottom: 13%;
+  }
+
+  footer {
+    padding: 5%;
+  }
 }
 
 /* view for laptops and desktops */
 @media screen and (min-width: 900px) {
-  body {
-    background-color: thistle;
-  }
-
   header {
     padding: 3% 10%;
+  }
+  .box-containor {
+    flex-direction: row;
+  }
+
+  .grid {
+    grid-template-columns: auto auto auto;
+    padding: 0px 8% 8%;
+    /* margin: 0px; */
+  }
+
+  footer {
+    padding: 2% 8%;
   }
 
   /* .box-containor {
     padding: 0% 9%;
   }
-
+  
   .girl-image {
     max-width: 90%;
     height: auto;
