@@ -54,6 +54,7 @@ h1 {
   padding: 0% 4%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 /* heading and paragraph item is there in box as 1st flex item */
@@ -138,7 +139,7 @@ span {
 .check p {
   font-size: 1.5em;
   font-weight: bold;
-  padding: 8% 7%;
+  padding: 8%;
   color: white;
 }
 
@@ -224,11 +225,14 @@ footer {
   }
   .box-containor {
     flex-direction: row;
+    justify-content: space-between;
   }
-
+.box{
+  width: 50%;
+}
   .grid {
     grid-template-columns: auto auto;
-    padding-bottom: 13%;
+    padding:0px 4% 13%;
   }
 
   footer {
@@ -243,6 +247,11 @@ footer {
   }
   .box-containor {
     flex-direction: row;
+    padding:0px 10%;
+    justify-content: space-between;
+  }
+  .box{
+    width: 50%;
   }
 
   .grid {
