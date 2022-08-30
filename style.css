@@ -260,9 +260,10 @@ footer {
 /* view for laptops and desktops */
 @media screen and (min-width: 900px) {
   header {
-    padding: 3% 10%;
+    padding: 2% 10%;
   }
   .box-containor {
+    margin-top: 0px;
     flex-direction: row;
     padding: 0px 10%;
     justify-content: space-between;
@@ -275,19 +276,39 @@ footer {
     font-size: 42px;
   }
   .box2 {
-    width: 30%;
+    width: 40%;
   }
   .containor-img-girl {
-    border-radius: 12px;
-    width:100%;
+    border-radius: 130px;
+    width: 210px;
+    height: 380px;
+    position: relative;
+    /* why it is going for opposite i dont know ,, flex end?? */
+    /* justify-content:flex-end;
+    align-items: flex-end;   */
+    /* object-fit: contain; */
+  }
+  .girl-image {
+    position: absolute;
+    bottom: 0px;
+    width: 275px;
     height: auto;
   }
-  .girl-image{
-    width: 90%;
-    height: auto;
+  .items-around-girl-right {
+    top: 110px;
+    right: 10px;
+    padding: 15px 35px 15px 15px;
   }
+  .items-around-girl-left {
+    position: absolute;
+    bottom: 105px;
+    padding: 15px 35px 15px 15px;
+    left: 0px;
+    z-index: 1;
+  }
+
   .grid {
-    margin-top: 10%;
+    margin-top: 55px;
     grid-template-columns: auto auto auto;
     padding: 0px 8% 8%;
     /* margin: 0px; */
