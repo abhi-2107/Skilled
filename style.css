@@ -55,7 +55,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid green;
+  /* border: 3px solid green; */
 }
 
 /* heading and paragraph item is there in box as 1st flex item */
@@ -65,11 +65,14 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  border: 2px solid palevioletred;
+  /* border: 2px solid palevioletred; */
 }
-
+.box1 p{
+  line-height: 23px;
+}
 p {
   color: gray;
+
 }
 
 /* button part of the box is designed */
@@ -87,9 +90,11 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
-  border: 2px solid rebeccapurple;
+  /* border: 2px solid rebeccapurple; */
   margin: 30px;
 }
+
+
 /* 2nd flex item as image of girl in a div containor ,, learn how you made it  */
 .containor-img-girl {
   /* align self used to set this individual flex item to align center */
@@ -104,7 +109,7 @@ p {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  border: 2px solid chocolate;
+  /* border: 2px solid chocolate; */
 }
 
 .girl-image {
@@ -237,8 +242,8 @@ footer {
   header {
     padding: 4% 5%;
   }
-  h1 {
-    font-size: 48px;
+  /* h1 {
+     font-size: 48px;
   }
   .box-containor {
     flex-direction: row;
@@ -246,10 +251,72 @@ footer {
   }
   .box {
     width: 50%;
+  } */
+  .box-containor {
+    margin-top: 0px;
+    flex-direction: row;
+    padding: 0px 10%;
+    justify-content: space-between;
+  }
+  
+  .box1 {
+    width: 60%;
+    gap: 28px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  .box2 {
+    width: 40%;
+  }
+  .containor-img-girl {
+    border-radius: 130px;
+    width: 210px;
+    height: 380px;
+    position: relative;
+    /* why it is going for opposite i dont know ,, flex end?? */
+    /* justify-content:flex-end;
+    align-items: flex-end;   */
+    /* object-fit: contain; */
+  }
+  .girl-image {
+    position: absolute;
+    bottom: 0px;
+    width: 275px;
+    height: auto;
+  }
+  .items-around-girl-right {
+    top: -15px;
+    right: -6px;
+    padding: 15px;
+  }
+  .items-around-girl-left {
+    position: absolute;
+    bottom: 0px;
+    padding: 15px 35px 15px 15px;
+    left: 0px;
+    z-index: 1;
+  }
+  .first{
+    position: relative; 
+  /* border: 2px solid red;  */
+  }
+  .side-style{
+    position: absolute;
+    width: 194px;
+    height: 291px;
+    top: 155px;
+    right: 0px;
+    transform: skew(180deg,322deg);
+    background-image: linear-gradient(rgb(69, 69, 181),rgb(193, 48, 193));
+  }
+  .box-containor{
+    padding-right: 0%;
   }
   .grid {
     grid-template-columns: auto auto;
     padding: 0px 4% 13%;
+    margin-top: 65px;
   }
 
   footer {
@@ -268,8 +335,9 @@ footer {
     padding: 0px 10%;
     justify-content: space-between;
   }
+  
   .box1 {
-    width: 50%;
+    width: 40%;
     gap: 28px;
   }
   h1 {
@@ -296,17 +364,35 @@ footer {
   }
   .items-around-girl-right {
     top: 110px;
-    right: 10px;
+    right: 30px;
     padding: 15px 35px 15px 15px;
   }
   .items-around-girl-left {
     position: absolute;
     bottom: 105px;
     padding: 15px 35px 15px 15px;
-    left: 0px;
+    left: 40px;
     z-index: 1;
   }
-
+  .first{
+    position: relative; 
+  /* border: 2px solid red;  */
+  }
+  .side-style{
+    position: absolute;
+    width: 199px;
+    height: 350px;
+    top: 85px;
+    right: 0px;
+    transform: skew(0deg,-40deg);
+    background-image: linear-gradient(rgb(69, 69, 181),rgb(193, 48, 193));
+  }
+  .box-containor{
+    padding-right: 0%;
+  }
+  .check p{
+    padding-left:10px 25px 0px ;
+  }
   .grid {
     margin-top: 55px;
     grid-template-columns: auto auto auto;
@@ -314,6 +400,7 @@ footer {
     /* margin: 0px; */
   }
 
+  
   footer {
     padding: 2% 8%;
   }
